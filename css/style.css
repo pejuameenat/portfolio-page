@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&family=Poppins:ital,wght@1,300&family=Roboto:wght@300&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+ 
+.dark-body{
+    background-color: #393E46;
+    color: white;
+}
+.bg-nav{
+    background-color: coral !important;
+}
+.fluid-2{
+    padding: 0 1.5rem;
+}
+/* everything nav */
+.logo{
+    width: 12%;
+}
+.nav-inner{
+    display: flex;
+    flex-grow: 1;
+    justify-content:  space-evenly;
+    /* border: 2px solid red; */
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.toggle-btn{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+ /* hero-image */
+.img-fluid2{
+    border-bottom: 10px solid coral;
+}
+.img-fluid2:hover{
+    filter: grayscale(.5);
+}
+.relative{
+    position: relative;
+}
+
+ .offset{
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    background-color: coral;
+    bottom: 1rem;
+    left: 0;
+    z-index: -1;
+    border-radius: 40%;   
+} 
+ .hire{
+    text-decoration: none;
+    color: #fff;
+ } 
+.img-fluid3{
+    width: 450px;
+    height: 350px;
+    border-radius: 50%;
+    border: 0;
+}
+ /* skills-section */
+.align-center{
+    text-align: center;
+    transition: 400ms;
+     width: 30%; 
+}
+.align-center:hover{
+    border: 2px solid #9d9191;
+    border-radius: 10px;
+    transform: translateY(-25px)
+}
+.align-center p{
+    font-size: 1rem;
+}
+.align-center h3{
+    font-size: 1.5rem !important;
+    font-weight: 600;
+}
+.transparent-bg{
+    background-color: transparent!important;
+
+}
+/* Projects section */
+.hero-head{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 1.2rem 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 2rem;
+}
+.grid-item{
+    background-color: #fff;
+    color: #000;  
+    padding-bottom: 1rem; 
+    position: relative; 
+    transition: 400ms ease-in;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+}
+.grid-item:hover{
+    transform: scale(1.1);
+}
+.grid-item img{
+    max-width: 100%;
+}
+.text-sec{
+    padding: .9rem;
+}
+.text-sec p{
+    padding-bottom: 1rem;
+}
+.link{
+    border: 0;
+    padding: .8rem 1rem;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: chocolate;
+    font-weight: 600;
+}
+
+.overlay2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: .8s ease;
+   backdrop-filter: blur(1.5px);
+}
+/* contact-section */
+.input-container{
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+input, textarea{
+    padding: .8rem;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+textarea{
+  padding-bottom: 2rem;
+}
+ textarea:focus{
+    outline: 2px solid cornflowerblue;
+}
+.full-width, textarea{
+    width: 100%;
+    display: block;
+}
+.half-width{
+    width: 48%; 
+}
+ .half-width+ .half-width{
+margin-left: 3%
+}
+.contact-head{
+    text-align: center;
+    color: navy;
+    padding: 1.5rem 0;
+}
+.send-msg{
+    background-color: rgb(89, 89, 190);
+    color: white;
+    padding:  .6rem .9rem;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    transition: 400ms;
+}
+.send-msg:hover{
+   background-color: navy;
+}
+/* foooter-divider */
+ .container-2{
+    margin: 5rem auto;
+ }
+  
+@media only screen and (max-width:992px){
+  /* .nav-inner{
+    flex-grow:0 ;
+  } */
+    .skills-grid{
+    display: grid;
+    grid-template-columns: minmax(400px, 1fr);
+}
+.align-center{
+    width: 90%;
+}
+    .half-width{
+        width: 100%;
+     }
+     .half-width +.half-width{
+        margin-left: 0;
+        }
+        
+         
+        .toggle-btn{
+            display: none;
+        }
+         
+         .img-fluid3{
+            width: 350px;
+            height: 250px; 
+        } 
+        .offset{
+            width: 320px;
+            height: 250px;
+            position: absolute;
+            bottom: .5rem;
+            left: 0;
+        }
+        .logo{
+            display: inline-block;
+        }
+        .hero-head{
+            font-size: 1rem;
+        }
+        .grid-item{
+            grid-column:  span 12;
+        }
+    }
+
+    
+    

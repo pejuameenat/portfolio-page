@@ -1,0 +1,89 @@
+:root{
+    --bg-clr: coral;
+    --bg-clr2: cornflowerblue;
+    --font-weight: 600;
+   --padding: .9rem;
+   --padding1: 1rem;
+   --padding2: 2.5rem 0;
+   --text-color: navy;
+   --font-size: 3rem;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-clr);
+    color: var(--text-color);
+}
+/* Nav */
+.bg-nav{
+    background-color: #fff !important;
+}
+.fluid-2{
+    padding: 0 1.5rem;
+}
+.logo{
+    width: 12%;
+}
+.nav-inner{
+    display: flex;
+    flex-grow: 1;
+    justify-content:  space-evenly;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.toggle-btn{
+    background-color: #000;
+    border: 0;
+    outline: 0;
+    padding: 1rem;
+}
+.container{
+    padding: var(--padding1);
+    width: 80%;
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid white;
+    border-radius: 16px;
+}
+h1, .output{
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    padding: var(--padding2);
+    
+}
+.inp{
+    width: 100%;
+    display: block;
+    margin: 0 auto 2rem; 
+    padding:var(--padding1);
+    outline: 0;
+}
+.inp::-webkit-outer-spin-button,
+.inp::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.inp:focus{
+   outline: 21x solid var(--bg-clr2);
+   border-radius: 16px 0 16px 0;
+   border-bottom: 5px solid var(--bg-clr2);
+}
+.send,.reload{
+  width: 48%;
+  outline: 0;
+  border: 0;
+  background-color: var(--bg-clr2);
+  padding: var(--padding1);
+  font-weight: var(--font-weight);
+  border-radius: 5px;
+}
+ /*PROJECT SECTION*/
+ 
+ @media only screen and (max-width: 800px){
+    .inp{
+        width: 200px;
+    }
+ }
